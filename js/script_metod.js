@@ -21,3 +21,9 @@ console.log(logg.substr(7, 6));
 const num = 12.29878;
 
 console.log(Math.round(num));
+
+const test = "12.2px"; 
+
+// console.log(parseInt(test));
+
+console.log(parseFloat(test));

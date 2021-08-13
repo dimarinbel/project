@@ -58,9 +58,13 @@ const personalMovieDB = {
 
             if (genre == '' || genre == null) {
                 console.log('Вы ввели некорректное значение');
+                i--;
+            } else {
+                personalMovieDB.genres[i-1] = genre;
             }
-
-            personalMovieDB.genres[i-1] = genre
         }
+        personalMovieDB.genres.forEach((item, i) => {
+            console.log(`Любимый жанр ${i + 1} - это ${item}`);
+        });
     }
 };

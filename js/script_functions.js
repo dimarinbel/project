@@ -37,3 +37,12 @@ const calc = (a, b) => {
 };
 
 console.log(calc(4,5));
+
+const arr = [1, 14, 4, 30, 50],
+    sorted = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+console.log(sorted);
